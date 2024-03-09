@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Nakuru city community platform</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-img">
+            <img src="city logo.jpg" alt="Me"/>
+        </div>      
+        <nav class="navbar">
+            <nav class="navbar">
+                <ul>
+                <li><a href="homepage.html" class="active">Home</a></li>            
+                <li>
+                    <a href="Citizen section.html">Citizen Section</a>
+                    <ul class="dropdown">
+                        <li><a href="#announcements-alerts">Announcements and Alerts</a></li>
+                        <li><a href="#community-forums">Community Forums</a></li>
+                        <li><a href="#service-requests">Service Requests</a></li>      
+                        <li><a href="#events-calendar">Events Calendar</a></li>
+                        <li><a href="#interactive-maps">Interactive Maps</a></li>
+                    </ul>
+                </li>    
+                <li>
+                    <a href="Authorities section.html">Authorities Section</a>
+                    <ul class="dropdown">
+                       <li><a href="#dashboard">Dashboard</a></li>
+                       <li><a href="#communication-center">Communication Center</a></li>
+                       <li><a href="#analytics-reports">Analytics and Reports</a></li>
+                       <li><a href="#community-engagement">Community Engagement</a></li>
+                       <li><a href="#document-repository">Document Repository</a></li>
+                       <li><a href="#event-management">Event Management</a></li>
+                    </ul>   
+                </li>
+                <li><a href="About.html">About</a></li>
+                <img src="user profile.jpg" class="user-pic" onclick="toggleMenu()">
+    
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="user profile.jpg"> 
+                            <h2>Jared langat</h2>
+                        </div>
+                        <hr>
+    
+                        <a href="#" class="sub-menu-link">
+                            <img src="edit profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+    
+                        <a href="#" class="sub-menu-link">
+                            <img src="settings.jpg">
+                            <p>Settings & Pricacy</p>
+                            <span>></span>
+                        </a>
+    
+                        <a href="#" class="sub-menu-link">
+                            <img src="help&support.jpg">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+    
+                        <a href="#" class="sub-menu-link">
+                            <img src="logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>WELCOME TO NAKURU CITY'S COMMUNITY PLATFORM</h1><br>
+            <h3>City of unlimited opportunities</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse maxime unde facere dolor aliquid earum incidunt quibusdam quaerat, nostrum corporis labore, deserunt fugit sit doloribus ipsa. Enim, nemo? Illo, corporis?</p>
+            <div class="btn-box">
+                <a href="#">Get started</a>
+                <a href="#" id="form-open" onclick="toggleForm()">Login</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="doflamingo.jpg" alt="Me"/>
+        </div>
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <!--Login form -->
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="input_box">
+                           <input  type="email" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope=alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input  type="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">                            
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password ?</a>
+                    </div>
+                    <button class="button">Login Now</button>
+
+                    <div class="login_signup">Don't have  an account?<a href="#" id="signup">Signup</a></div>
+                </form>
+            </div>
+            <!--Signup  form -->
+            <div class="form signup_form">
+                <form action="#">
+                    <h2>Signup</h2>
+                    <div class="input_box">
+                           <input  type="email" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope=alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input  type="password" placeholder="Create password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input  type="password" placeholder="Confirm password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    
+                    <button class="button">Signup Now</button>
+
+                    <div class="login_signup">Already have  an account?<a href="#" id="login ">Login </a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2023 by r.k.l_jared | All rights reserved.</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>          
+       </footer>
+       <script>
+        let subMenu = document.getElementById("subMenu");
+    
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+     </script>
+     <script src="login.js"></script>
+</body>
+</html>

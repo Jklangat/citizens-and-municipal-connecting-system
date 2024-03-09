@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Citizen section</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-img">
+            <img src="city logo.jpg" alt="Me"/>
+        </div>      
+        <nav class="navbar">
+            <ul>
+            <li><a href="homepage.html">Home</a></li>            
+            <li>
+                <a href="Citizen section.html" class="active">Citizen Section</a>
+                <ul class="dropdown">
+                    <li><a href="#announcements-alerts">Announcements and Alerts</a></li>
+                    <li><a href="#community-forums">Community Forums</a></li>
+                    <li><a href="#service-requests">Service Requests</a></li>      
+                    <li><a href="#events-calendar">Events Calendar</a></li>
+                    <li><a href="#interactive-maps">Interactive Maps</a></li>
+                </ul>
+            </li>    
+            <li>
+                <a href="Authorities section.html">Authorities Section</a>
+                <ul class="dropdown">
+                   <li><a href="#dashboard">Dashboard</a></li>
+                   <li><a href="#communication-center">Communication Center</a></li>
+                   <li><a href="#analytics-reports">Analytics and Reports</a></li>
+                   <li><a href="#community-engagement">Community Engagement</a></li>
+                   <li><a href="#document-repository">Document Repository</a></li>
+                   <li><a href="#event-management">Event Management</a></li>
+                </ul>   
+            </li>
+            <li><a href="About.html">About</a></li>
+            <img src="user profile.jpg" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="user profile.jpg"> 
+                        <h2>Jared langat</h2>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="edit profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="settings.jpg">
+                        <p>Settings & Pricacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="help&support.jpg">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="announcements-alerts" class="announcements-alerts">
+        <h2>Announcements and Alerts</h2>
+        <!-- Add section for receiving announcements and setting preferences for alerts -->
+    </section>
+
+
+    <section id="community-forums" class="forum-section">
+        <h2>Community Forums</h2>
+        <!-- Add discussion boards, voting/polling features, and notifications -->
+    </section>
+
+    
+    <section id="service-requests" class="service-request-form">
+        <h2>Service Requests</h2>
+        <form action="#" method="post">
+            <!-- Add form elements for submitting service requests -->
+            <!-- Include a section for tracking and providing feedback on requests -->
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+    
+    <section id="events-calendar" class="events-section">
+        <h2>Events Calendar</h2>
+        <!-- Add calendar highlighting community events, town hall meetings, and workshops -->
+        <!-- Include RSVP and reminders for upcoming events -->
+    </section>
+
+    <section id="interactive-maps" class="map-section">
+        <h2>Interactive Maps</h2>
+        <!-- Add maps displaying key locations, services, and ongoing projects -->
+        <!-- Include functionality for reporting and tracking issues on the map -->
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2023 by r.k.l_jared | All rights reserved.</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>          
+       </footer>
+ <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+ </script>      
+</body>
+</html>
